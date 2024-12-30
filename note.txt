@@ -24,3 +24,4 @@ git reset --soft <version_id>    //保留工作区、暂存区内容，相当于
 git reset --hard <version_id>    //不保留工作区，也不保留暂存区，相当于回退到版本镜像，撤销之后的所有操作
 git reset --mixed <version_id>   //保留工作区，但不保留暂存区，相当于撤销了add操作
 
+git diff    //比较工作区与暂存区的差异

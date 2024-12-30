@@ -12,11 +12,13 @@ git add <file_name>     //将文件加入追踪
 git add <*.后缀>        //将相同后缀的文件加入跟踪
 git add .               //将当前文件夹内所有文件加入跟踪
 
+git ls-files    //查询暂存区中文件内容
 
 git commit -m <commit_info>     //提交更改，-m后为提交信息
 
 git log         //查询提交记录
 git log --oneline   //查询简洁提交信息
-git reset --soft
-git reset --hard
-git reset --mixed
+git reset --soft <version_id>    //保留工作区、暂存区内容，相当于撤销了commit操作
+git reset --hard <version_id>    //不保留工作区，也不保留暂存区，相当于回退到版本镜像，撤销之后的所有操作
+git reset --mixed <version_id>   //保留工作区，但不保留暂存区，相当于撤销了add操作
+

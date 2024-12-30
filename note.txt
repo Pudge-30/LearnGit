@@ -33,3 +33,9 @@ git diff HEAD~ HEAD     //与上一版本的比较
 git diff HEAD~2 HEAD    //与之前第二个版本比较
 git diff <file_name>    //仅查看某个文件的差异
 git diff <branch_name> <branch_name>    //比较两条分支的差异
+
+git rm <file_name>  //将文件从工作区与暂存区删除
+git rm --cached <file> //将文件从暂存区中删除，但仍然保存在本地
+git rm -r * //递归删除某个目录下的所有子目录和文件
+//删除后记得提交
+

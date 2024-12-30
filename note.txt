@@ -25,3 +25,5 @@ git reset --hard <version_id>    //不保留工作区，也不保留暂存区，
 git reset --mixed <version_id>   //保留工作区，但不保留暂存区，相当于撤销了add操作
 
 git diff    //比较工作区与暂存区的差异
+git diff HEAD      //与最新版本比较差异
+git diff --cached     //比较暂存区与版本库之间的差异

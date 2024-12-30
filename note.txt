@@ -1,0 +1,22 @@
+git --version       //查询git版本 
+git config --global user.name ""    //设置全局用户名
+git config --global user.email xxxx@163.com //设置全局用户邮箱
+git config --global credential.helper store //保存用户信息
+git config --global --list  //查询用户信息
+git init            //将当前git目录初始化为git仓库
+git init <repo_name>    //在当前目录下创建于一个新的git目录
+git clone <repo_link>   //从github上clone一个git仓库
+
+git status      //查询当前仓库状态
+git add <file_name>     //将文件加入追踪
+git add <*.后缀>        //将相同后缀的文件加入跟踪
+git add .               //将当前文件夹内所有文件加入跟踪
+
+
+git commit -m <commit_info>     //提交更改，-m后为提交信息
+
+git log         //查询提交记录
+git log --oneline   //查询简洁提交信息
+git reset --soft
+git reset --hard
+git reset --mixed

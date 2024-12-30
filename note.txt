@@ -16,9 +16,11 @@ git ls-files    //查询暂存区中文件内容
 
 git commit -m <commit_info>     //提交更改，-m后为提交信息
 
+git reflog      //查询所有操作的版本号（误操作后使用reset进行回退
+
 git log         //查询提交记录
 git log --oneline   //查询简洁提交信息
-git reset --soft <version_id>    //保留工作区、暂存区内容，相当于撤销了commit操作
+git reset --soft <version_id>    //保留工作区、暂存区内容，相当于撤销了commit操作。进行多次commit后，使用soft回退，然后再统一提交
 git reset --hard <version_id>    //不保留工作区，也不保留暂存区，相当于回退到版本镜像，撤销之后的所有操作
 git reset --mixed <version_id>   //保留工作区，但不保留暂存区，相当于撤销了add操作
 

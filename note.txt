@@ -28,3 +28,8 @@ git reset --mixed <version_id>   //保留工作区，但不保留暂存区，相
 git diff            //工作区-暂存区
 git diff HEAD       //工作区-版本库
 git diff --cached   //暂存区-版本库
+git diff <commit_hash> <commit_hash>        //比较两个版本的差异，可用HEAD代表最新的版本
+git diff HEAD~ HEAD     //与上一版本的比较
+git diff HEAD~2 HEAD    //与之前第二个版本比较
+git diff <file_name>    //仅查看某个文件的差异
+git diff <branch_name> <branch_name>    //比较两条分支的差异

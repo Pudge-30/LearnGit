@@ -8,6 +8,7 @@ git init <repo_name>    //在当前目录下创建于一个新的git目录
 git clone <repo_link>   //从github上clone一个git仓库
 
 git status      //查询当前仓库状态
+git status -s   //简略显示
 git add <file_name>     //将文件加入追踪
 git add <*.后缀>        //将相同后缀的文件加入跟踪
 git add .               //将当前文件夹内所有文件加入跟踪
@@ -15,6 +16,7 @@ git add .               //将当前文件夹内所有文件加入跟踪
 git ls-files    //查询暂存区中文件内容
 
 git commit -m <commit_info>     //提交更改，-m后为提交信息
+git commit -am <commit_info>    //先add，再commit
 
 git reflog      //查询所有操作的版本号（误操作后使用reset进行回退
 
@@ -39,3 +41,10 @@ git rm --cached <file> //将文件从暂存区中删除，但仍然保存在本�
 git rm -r * //递归删除某个目录下的所有子目录和文件
 //删除后记得提交
 
+.gitignore  //忽视文件目录
+1 空行忽略，#注释
+2 *匹配任意字符，？匹配单个字符 []匹配中间字符，例如[abc]匹配a/b/c
+3 **匹配任意的中间目录
+4 [0-9]匹配任意一位数字 [a-z]匹配任意单个小写字母
+5 !取反，忽略以外的任意文件或目录
+6 自上而下，下为对上方的补充

@@ -60,3 +60,13 @@ git remote -v //查看远程仓库
 git pull <remote_repo_nick_name> <remote_branch_name>:<local_branch_name>   //拉取远程仓库内容
 
 使用vscode进行Git操作
+
+//分支
+
+git branch                  //查看分支
+git branch <branch_name>    //创建分支
+git checkout <branch_name>  //切换分支，同时还有回退版本的作用，容易误操作
+git switch <branch_name>    //切换分支，推荐
+git merge <branch_name>     //将目标分支合并至当前所在分支
+git branch -d <branch-name> //删除分支（目标分支已被合并）
+git branch -D <branch-name> //删除分支（目标分支未被合并）

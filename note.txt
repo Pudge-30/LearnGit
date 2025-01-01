@@ -48,3 +48,13 @@ git rm -r * //递归删除某个目录下的所有子目录和文件
 4 [0-9]匹配任意一位数字 [a-z]匹配任意单个小写字母
 5 !取反，忽略以外的任意文件或目录
 6 自上而下，下为对上方的补充
+
+git push        //将文件推至远程库
+git pull        //将文件拉至本地库
+
+git remote add <remote_repo_nick_name> <remote_repo_link>   //在本地添加远程仓库
+git push -u <remote_repo_nick_name> <remote_repo_branch_name>   //将本地文件push至远程仓库
+
+git remote -v //查看远程仓库
+
+git pull <remote_repo_nick_name> <remote_branch_name>:<local_branch_name>   //拉取远程仓库内容

@@ -58,3 +58,5 @@ git push -u <remote_repo_nick_name> <remote_repo_branch_name>   //将本地文�
 git remote -v //查看远程仓库
 
 git pull <remote_repo_nick_name> <remote_branch_name>:<local_branch_name>   //拉取远程仓库内容
+
+使用vscode进行Git操作

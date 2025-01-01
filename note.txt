@@ -66,10 +66,13 @@ git pull <remote_repo_nick_name> <remote_branch_name>:<local_branch_name>   //�
 git branch                  //查看分支
 git branch <branch_name>    //创建分支
 git checkout <branch_name>  //切换分支，同时还有回退版本的作用，容易误操作
+git checkout -b <branch_name> <sha> //切换分支，并回退到某个版本
 git switch <branch_name>    //切换分支，推荐
 git merge <branch_name>     //将目标分支合并至当前所在分支
 git branch -d <branch-name> //删除分支（目标分支已被合并）
 git branch -D <branch-name> //删除分支（目标分支未被合并）
+
+git log --oneline --graph --decorate    //比较美观的分支图
 
 //合并
 //无冲突时：自动合并
@@ -78,3 +81,9 @@ git branch -D <branch-name> //删除分支（目标分支未被合并）
     add -> commit
 //中止合并
     git merge --abort
+
+//使用rebase操作合并
+git rebase <branch_name>    //将当前分支变基到目的分支上，形成一条线性的提交记录
+                            //确保只有自己操作分支，并且希望分支更加简介时，可以使用变基操作
+
+git tag     //标记版本号
